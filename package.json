@@ -1,0 +1,30 @@
+{
+  "name": "resume-api",
+  "version": "1.0.0",
+  "description": "RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "start": " cross-env NODE_ENV=production MONGODB_PWD=qwe19960921 SECRET=resume-jwt-secret node app",
+    "dev": "cross-env MONGODB_PWD=qwe19960921 SECRET=resume-jwt-secret nodemon app"
+  },
+  "author": "Winston",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-json-error": "^3.1.2",
+    "koa-jwt": "^4.0.0",
+    "koa-parameter": "^3.0.1",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.11.9",
+    "side-channel": "^1.0.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.6"
+  }
+}
